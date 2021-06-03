@@ -1,0 +1,42 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pie chart</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"/>
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}"/>
+    <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+<style>
+.navbar{
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+</head>
+<body bgcolor="#f0ffff" >
+<img src="{% static 'img/pie.png '%}", alt="pie chart" align="right"><br>
+<form action="./index"  align="left">
+    <table>
+        <tr><td>No.of times pregnant:</td><td><input type="number" name="preg" title="Enter number of times pregnant" required></td></tr>
+        <tr><td>Plasma glucose:</td><td><input type="number" name="plas" title="Enter Plasma glucose" required></td></tr>
+        <tr><td>blood pressure:</td><td><input type="number" name="pres" title="Enter blood pressure" required></td></tr>
+        <tr><td>skin fold thickness:</td><td><input type="number" name="skin" title="Enter skin fold thickness" required></td></tr>
+        <tr><td>serum insulin:</td><td><input type="number" name="insu" title="Enter serum insulin" required></td></tr>
+        <tr><td>Body mass index:</td><td><input type="number" name="mass" step="0.01" title="Enter Body mass index" required></td></tr>
+        <tr><td>Diabetes pedigree function:</td><td><input type="number" name="pedi" step="0.001" title="Enter Diabetes pedigree function" required></td></tr>
+        <tr><td>Age:</td><td><input type="number" name="age" title="Enter the age" min="21" required></td></tr>
+    </table>
+    <br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
